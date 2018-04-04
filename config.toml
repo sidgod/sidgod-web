@@ -1,0 +1,47 @@
+baseurl = "/"
+languageCode = "en-US"
+title = "Siddharth Godbole"
+disqusShortname = "sidgod"
+googleAnalytics = ""
+theme = "hugo-sustain"
+
+[permalinks]
+  post = "/:year/:month/:day/:slug"
+
+[params]
+  avatar = "profile.png"
+  author = "Siddharth Godbole"
+  description = "Siddharth Gobole's personal website and blog"
+
+  # Custom assets can be linked with their paths relative to static/
+  custom_css = []
+  custom_js  = []
+
+[params.social]
+  Github        = "sidgod"
+  Email         = "master@sidgod.in"
+  Twitter       = "siddharth_god"
+  LinkedIn      = "sidgod"
+  Stackoverflow = ""
+
+## Main Menu
+[[menu.main]]
+  name = "blog"
+  weight = 100
+  identifier = "blog"
+  url = "/blog/"
+[[menu.main]]
+  name = "projects"
+  identifier = "projects"
+  weight = 200
+  url = "/projects/"
+[[menu.main]]
+  name = "resume"
+  identifier = "resume"
+  weight = 300
+  url = "/resume/"
+[[menu.main]]
+  name = "About Me"
+  identifier = "about"
+  weight = 400
+  url = "/about/"
