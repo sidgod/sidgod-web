@@ -1,0 +1,19 @@
+version: 0.2
+
+phases:
+    install:
+        commands:
+            - pip install Pygments
+            - wget https://github.com/gohugoio/hugo/releases/download/v0.48/hugo_0.48_Linux-64bit.deb
+            - dpkg -i hugo_0.48_Linux-64bit.deb
+    build:
+        commands:
+            - hugo
+            - echo "S3 Upload Beginning"
+            - aws s3 sync public/ s3://ubersid.in/ --region us-east-1 --delete --acl public-read
+            - echo "S3 Upload Complete"
+
+    post_build:
+        commands:
+            - echo "Build complete"
+            - aws sns publish --topic-arn YOUR_TOPIC_ARN --subject 'AWS CodeBuild Complete' --message 'Your build using AWS CodeBuild has been completed. Check the CodeBuild console to see the details.'
