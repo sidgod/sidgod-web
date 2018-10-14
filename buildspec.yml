@@ -9,11 +9,7 @@ phases:
     build:
         commands:
             - hugo
-            - echo "S3 Upload Beginning"
-            - aws s3 sync public/ s3://ubersid.in/ --region us-east-1 --delete --acl public-read
-            - echo "S3 Upload Complete"
 
     post_build:
         commands:
             - echo "Build complete"
-            - aws sns publish --topic-arn YOUR_TOPIC_ARN --subject 'AWS CodeBuild Complete' --message 'Your build using AWS CodeBuild has been completed. Check the CodeBuild console to see the details.'
