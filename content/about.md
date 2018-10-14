@@ -13,4 +13,4 @@ I have been swimming my entire life, mainly to cool my boots! ;)
 
 I am passionate about writing awesome software to help our future generations do more meaningful things (than just coding, duh!)!!!.
 
-I am working with [Symantec Corporation](http://www.symantec.com) for past 5 + years, so far its been really fun!
+I am working with [Symantec Corporation](http://www.symantec.com) for ~6 years, so far its been really fun!
