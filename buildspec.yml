@@ -9,12 +9,9 @@ phases:
     build:
         commands:
             - hugo
+            - ls -ltr
 
     post_build:
         commands:
+            - aws s3 sync --delete --acl public-read --delete --cache-control max-age=3600 public s3://ubersid.in
             - echo "Build complete"
-artifacts:
-    files:
-        - '**/*'
-    base-directory: public
-    name: ''
