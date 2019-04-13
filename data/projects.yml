@@ -1,13 +1,13 @@
 name: Projects
 source:
-  - icon: fa fa-github
+  - icon: fab fa-github
     name: Java Pad Server
     description: This is Java based app to demonstrate how different multi-threading paradigms work in Java particularly w.r.t. networking. This was an effort to understand NIO part of Java and what makes it so worth using. You can read all about it on my blog here.
 
-  - icon: fa fa-github
+  - icon: fab fa-github
     name: ThankBack
     description: ThankBack - Say thanks for b'day wishes on Facebook in less than 10 seconds! This was a technology demonstration of how Play framework can be uses to quickly build apps with social integration. This app is currently hosted on Heroku. You can read all about it on my blog.
 
-  - icon: fa fa-github
+  - icon: fab fa-github
     name: Raspberry Pi / Arduino tinkering
     description: Having done my engineering in electronics, I love to see computer world directly apply to real life. Tinkering with Raspberry Pi / Arduino gives me a good croos-over between electronis and computing. You can read all about it on my blog.

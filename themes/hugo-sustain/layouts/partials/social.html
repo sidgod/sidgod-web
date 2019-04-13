@@ -1,7 +1,7 @@
 <div class="social">
   <ul class="social-links">
     {{ if .Site.Params.Social.Github }}
-      <li><a href="http://github.com/{{ .Site.Params.Social.Github }}"><i class="fa fa-github"></i></a></li>
+      <li><a href="http://github.com/{{ .Site.Params.Social.Github }}"><i class="fab fa-github"></i></a></li>
     {{ end }}
 
     {{ if .Site.Params.Social.Email }}
@@ -9,15 +9,19 @@
     {{ end }}
 
     {{ if .Site.Params.Social.Twitter }}
-      <li><a href="http://twitter.com/{{ .Site.Params.Social.Twitter }}"><i class="fa fa-twitter"></i></a></li>
+      <li><a href="http://twitter.com/{{ .Site.Params.Social.Twitter }}"><i class="fab fa-twitter"></i></a></li>
     {{ end }}
 
     {{ if .Site.Params.Social.LinkedIn }}
-      <li><a href="http://linkedin.com/in/{{ .Site.Params.Social.LinkedIn }}"><i class="fa fa-linkedin"></i></a></li>
+      <li><a href="http://linkedin.com/in/{{ .Site.Params.Social.LinkedIn }}"><i class="fab fa-linkedin"></i></a></li>
+    {{ end }}
+
+    {{ if .Site.Params.Social.GoodReads }}
+      <li><a href="https://www.goodreads.com/{{ .Site.Params.Social.GoodReads }}"><i class="fab fa-goodreads"></i></a></li>
     {{ end }}
 
     {{ if .Site.Params.Social.Stackoverflow }}
-      <li><a href="http://stackoverflow.com/{{ .Site.Params.Social.Stackoverflow }}"><i class="fa fa-stack-overflow"></i></a></li>
+      <li><a href="http://stackoverflow.com/{{ .Site.Params.Social.Stackoverflow }}"><i class="fab fa-stack-overflow"></i></a></li>
     {{ end }}
   </ul>
 </div>

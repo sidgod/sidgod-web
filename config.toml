@@ -23,6 +23,7 @@ theme = "hugo-sustain"
   Twitter       = "siddharth_god"
   LinkedIn      = "sidgod"
   Stackoverflow = ""
+  GoodReads     = "sidgod"
 
 ## Main Menu
 [[menu.main]]
