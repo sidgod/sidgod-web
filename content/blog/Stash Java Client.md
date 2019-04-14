@@ -16,6 +16,7 @@ highlight = "true"
 Every now and then I need a "developer cool-off period" out of usually tight deliveries. Personally I take these "downtimes" to work on a small coding project to cool off of sorts!
 
 Organisation that I works for has great manual gates on how AWS IAM policies are created and approved. Me, being one of those who review these policies always thought whether it's really needed to be done by a human. Thus came "cool off" mini project to automate IAM policy reviews. This review essentially consists of two thing:
+
 * AWS Standards - These are structure and content of policy as specified by AWS. Typically policy has to adhere to the policy grammar as described [here](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_grammar.html) 
 * Org Standards - On top of what AWS recommends, there are organisation specific policies like naming conventions, certain policy standards to be uphelp.
 
