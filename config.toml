@@ -2,7 +2,7 @@ baseurl = "/"
 languageCode = "en-US"
 title = "Siddharth Godbole"
 disqusShortname = "sidgod"
-googleAnalytics = ""
+googleAnalytics = "UA-155251155-1"
 theme = "hugo-sustain"
 
 [permalinks]
