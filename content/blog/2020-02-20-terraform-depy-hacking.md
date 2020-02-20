@@ -104,7 +104,7 @@ Simple check then I was planning to do was if No. of VPCs is more than 1, we hav
 
 {{< highlight terraform  >}}
 locals {
-	vpc_env = "plg"
+	vpc_env = "test"
 	region = "us-east-1"
 }
 
