@@ -20,6 +20,7 @@ For those un-initiated in Infrastructure-as-a-code, Terraform is a tool to manag
 Just some time back we were also developing a tooling in Terraform that'll allow us to create and "bootstrap" new AWS accounts with ease. These newly created account will have same stuff set up as bootstrapping processing, these will be overall controls that other Applications will be built on top of. E.g. Setting up VPCs, Networking, Basic Account restrictions etc.
 
 I was put on to develop a small Terraform module that'll serve as a basic lookup module that'll provide common elements E.g. What is Engineering VPC, what is DevOps VPC, what are basic Security groups that can allow access to/from Corporate etc. While working on this module I did discover amazing that you can or CAN NOT do with Terraform. One such case was for a specific set of lookups as described below:
+
 * Output Engineering VPC from current AWS account
 * Output DevOps VPC from current AWS account __if it exists__, return engg VPC otherwise
 
