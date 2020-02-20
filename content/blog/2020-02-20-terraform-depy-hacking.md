@@ -137,7 +137,8 @@ output "vpc_devops" {
 }
 {{< / highlight >}}
 
-Couple things to notice in thos script:
+Couple things to notice in this script:
+
 * count clause basically offers a way to run that resource lookup "conditionally". Although "count" is actually meant to be used to create resources repetitively without repeating code for it, everyone used it as a conditional statement as well. 
 * Since Resource "vpc_devops" now depends on whether No. of VPCs is more than 1, output variable "vpc_devops" can return nothing in cases where AWS Account does not have any DevOps VPC. In order to handle this we use an operator called as [Splat Expression](https://www.terraform.io/docs/configuration/expressions.html#splat-expressions). This is why output defined values as __data.aws_vpc.vpc_devops.*.id__
 
