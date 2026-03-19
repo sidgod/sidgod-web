@@ -7,7 +7,7 @@
       <ul class="nav navbar-nav navbar-right">
       {{ if .Site.Menus.main }}
         {{ range sort .Site.Menus.main }}
-        <li><a href="{{ .URL }}">{{ .Name | upper }}</a></li>
+        <li><a href="{{ .URL | absURL }}">{{ .Name | upper }}</a></li>
         {{ end }}
       {{ end }}
       </ul>

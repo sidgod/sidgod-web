@@ -1,8 +1,8 @@
 baseurl = "/"
 languageCode = "en-US"
 title = "Siddharth Godbole"
-disqusShortname = "sidgod"
-googleAnalytics = "UA-155251155-1"
+# disqusShortname = "sidgod"  # Removed - comments disabled
+# googleAnalytics = ""  # TODO: Add GA4 measurement ID if analytics needed later
 theme = "hugo-sustain"
 
 [permalinks]
@@ -11,7 +11,7 @@ theme = "hugo-sustain"
 [params]
   avatar = "profile.png"
   author = "Siddharth Godbole"
-  description = "Siddharth Gobole's personal website and blog"
+  description = "Siddharth Godbole's personal website and blog"
 
   # Custom assets can be linked with their paths relative to static/
   custom_css = []
@@ -24,6 +24,9 @@ theme = "hugo-sustain"
   LinkedIn      = "sidgod"
   Stackoverflow = ""
   GoodReads     = "sidgod"
+
+[markup.goldmark.renderer]
+  unsafe = true
 
 ## Main Menu
 [[menu.main]]

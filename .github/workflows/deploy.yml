@@ -1,0 +1,59 @@
+name: Build and Deploy Hugo Site
+
+on:
+  push:
+    branches: [master]
+  workflow_dispatch:  # Allow manual trigger from GitHub UI
+
+# Sets permissions for OIDC token federation with AWS
+permissions:
+  id-token: write
+  contents: read
+
+# Prevent concurrent deployments
+concurrency:
+  group: deploy
+  cancel-in-progress: true
+
+env:
+  HUGO_VERSION: '0.155.3'
+  S3_BUCKET: 'ubersid.in'
+  AWS_REGION: 'us-east-1'
+  CLOUDFRONT_DISTRIBUTION_ID: 'E26ZKUN5VHRFKK'
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          submodules: true
+          fetch-depth: 0  # Fetch all history for .GitInfo and .Lastmod
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: ${{ env.HUGO_VERSION }}
+          extended: true
+
+      - name: Build site
+        run: hugo --minify
+
+      - name: Configure AWS credentials via OIDC
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: ${{ secrets.AWS_ROLE_ARN }}
+          aws-region: ${{ env.AWS_REGION }}
+
+      - name: Deploy to S3
+        run: |
+          aws s3 sync public/ s3://${{ env.S3_BUCKET }} \
+            --delete \
+            --cache-control "max-age=3600"
+
+      - name: Invalidate CloudFront cache
+        run: |
+          aws cloudfront create-invalidation \
+            --distribution-id ${{ env.CLOUDFRONT_DISTRIBUTION_ID }} \
+            --paths "/*"
