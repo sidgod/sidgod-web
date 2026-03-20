@@ -21,7 +21,7 @@ I can see that my last post was on 12th June so it has taken quite some time for
 
 &nbsp;
 
-[<img class="aligncenter size-large wp-image-23" src="/img/Garden-IoT-Architecture-1024x375.png" alt="" width="640" height="234" srcset="/img/Garden-IoT-Architecture-1024x375.png 1024w, /img/Garden-IoT-Architecture-300x110.png 300w, /img/Garden-IoT-Architecture-768x282.png 768w, /img/Garden-IoT-Architecture-604x221.png 604w, /img/Garden-IoT-Architecture.png 1369w" sizes="(max-width: 640px) 100vw, 640px" />][1]
+<img src="/img/Garden-IoT-Architecture.png" alt="Garden IoT Architecture" style="max-width:100%" />
 
 There are quite a few things in this diagram, let me start with basics &#8211; I wanted to gather data on temperature, humidity and soil moisture, find trend for all these parameters and finally predict how much water should be dispensed based on past data and weather forecast for the day.
 

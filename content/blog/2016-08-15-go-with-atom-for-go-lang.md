@@ -32,7 +32,7 @@ As always first step is Initiation and for that I wanted to setup go lang on mac
   5. If any of those packages have dependencies, you&#8217;ll be prompted to take action, it&#8217;s just a matter of clicking through all &#8220;Yes&#8221; buttons.
   6. After final restart of Atom, It&#8217;s time to Point your Atom editor to project location. 
       * File -> Add Project Folder will allow you to point to project directory that you want to use.
-  7. Create new file hello.go like this:    [<img class="alignnone size-medium wp-image-15" src="/img/Atom-Go-300x101.png" alt="Atom-Go" width="300" height="101" srcset="/img/Atom-Go-300x101.png 300w, /img/Atom-Go-768x258.png 768w, /img/Atom-Go-1024x345.png 1024w, /img/Atom-Go.png 1260w" sizes="(max-width: 300px) 100vw, 300px" />][1]
+  7. Create new file hello.go like this:    <img src="/img/Atom-Go.png" alt="Atom-Go" style="max-width:100%" />
   8. IF it fails to auto complete, like in my case, it actually gave me warning that some native modules needed to be rebuilt, once you do that, restart Atom and you&#8217;ll have all the auto complete that you want!
 
 Thanks it folks, It cannot get easier than this, so far I have loved Atom + GO Lang integration, as I progress through learning through GO, I&#8217;ll add more on this topic.

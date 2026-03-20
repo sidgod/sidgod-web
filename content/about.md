@@ -7,10 +7,14 @@ render: "default"
 showpagemeta: false
 ---
 ## About Me
-Hello, I'm [Siddharth Godbole](#). I live in Pune, India with my family. I started my programming stint with C language, followed by use of Java, C++ and most recently - Go. I've been working for more than 10 years as a professional software engineer now and I'm trying to pivot and get some exposure to ML these days.
+Hello, I'm Siddharth Godbole. I live in Pune, India with my family.
 
-I have been swimming my entire life, mainly to cool my boots! ;)
+I'm a Technical Architect with 20 years of experience in enterprise software engineering. I specialize in backend platform architecture, large-scale distributed systems, and — more recently — AI/ML and agentic systems in the cybersecurity domain.
 
-I am passionate about writing awesome software to help our future generations do more meaningful things (than just coding, duh!)!!!.
+Currently I lead backend engineering and AI/ML strategy at [RedSeal](https://www.redseal.net), where I work on SaaS platform migration, microservices design, observability infrastructure, and building autonomous AI agents using LangGraph and MCP. Before RedSeal, I spent nine years at Symantec (later Accenture Security) working on managed security services — monitoring systems processing 150B+ log lines/day, AWS cloud migrations, and Spark-based UEBA analytics across 12B events/day.
 
-I am working with [Symantec Corporation](http://www.symantec.com) for ~6 years, so far its been really fun!
+I started my programming journey with C, moved to Java (which has been my primary language for two decades), and have since picked up Python, Go, and most recently the GenAI/LLM toolchain. I hold an AWS Solutions Architect certification and am currently pursuing a certificate in Applied Generative AI from Johns Hopkins University.
+
+I'm passionate about building software that works at scale and solving real-world problems — whether that's through well-designed backend systems or AI agents that can reason about security posture autonomously.
+
+I have been swimming my entire life, mainly to cool my boots!

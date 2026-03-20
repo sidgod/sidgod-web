@@ -19,7 +19,7 @@ theme = "hugo-sustain"
 
 [params.social]
   Github        = "sidgod"
-  Email         = "master@sidgod.in"
+  Email         = ""
   Twitter       = "siddharth_god"
   LinkedIn      = "sidgod"
   Stackoverflow = ""

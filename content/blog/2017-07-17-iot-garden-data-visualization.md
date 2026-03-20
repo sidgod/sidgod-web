@@ -38,7 +38,7 @@ Together &#8211; AWS Lambda and Cloud watch will record all incoming samples aga
 
 Now for final part, we need to see graphs for all 3 custom metrics &#8211; this can be done by using yet another service of AWS Cloudwatch &#8211; Dashboards. I created a new Dashboard, used 3 custom metrics and plotted a time series line graph for 3. My CloudWatch dashboard now looks like this:
 
-[<img class="aligncenter size-large wp-image-55" src="/img/Dashboard-1024x640.png" alt="" width="640" height="400" srcset="/img/Dashboard-1024x640.png 1024w, /img/Dashboard-300x188.png 300w, /img/Dashboard-768x480.png 768w, /img/Dashboard-432x270.png 432w" sizes="(max-width: 640px) 100vw, 640px" />][1]
+<img src="/img/Dashboard.png" alt="CloudWatch Dashboard" style="max-width:100%" />
 
 As seen here, we were able to read data from sensors, forward it to Cloud IoT service, process it, store it as time-series data and finally visualize the same. Now MQTT being publish subscribe also adds capabilities such as callbacks so say if these parameters hit certain level or if our machine learning model concludes that we need to start watering the garden, we can do all that with sam setup. But for now, I&#8217;ll conclude this series and hope to write more about followup parts of series about using this data for machine learning soon, till then c&#8217;ya 😉
 
